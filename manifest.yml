@@ -1,0 +1,24 @@
+lzc-sdk-version: "0.1"
+name: 迅雷NAS版
+package: cloud.lazycat.app.thunder
+version: 3.11.2
+description: Nas thunder
+homepage: https://github.com/0x676e67/thunder
+author: "0x676e67"
+application:
+  subdomain: thunder
+  background_task: true
+  multi_instance: false
+  gpu_accel: false
+  kvm_accel: false
+  usb_accel: false
+  routes:
+    - /=http://xunlei.cloud.lazycat.app.thunder.lzcapp:5055/
+services:
+  xunlei:
+    image: registry.lazycat.cloud/czyt/0x676e67/xunlei:2bae4337d2eb6ac2
+    environment:
+
+    binds:
+      - /lzcapp/var/data:/xunlei/data
+      - /lzcapp/run/mnt/home/XunLeiDownload:/xunlei/downloads

@@ -1,0 +1,13 @@
+services:
+  xunlei:
+    environment:
+      - XUNLEI_GID=1000
+      - XUNLEI_UID=1000
+    image: ghcr.io/0x676e67/xunlei:3.11.2-32
+    ports:
+      - 5055:5055
+    privileged: true
+    restart: always
+    volumes:
+      - /DATA/AppData/Xunlei:/xunlei/data
+      - /DATA/Downloads:/xunlei/downloads

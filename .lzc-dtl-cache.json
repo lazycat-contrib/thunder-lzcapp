@@ -1,0 +1,34 @@
+{
+  "name": "迅雷NAS版",
+  "package": "cloud.lazycat.app.thunder",
+  "description": "Nas thunder",
+  "homepage": "https://github.com/0x676e67/thunder",
+  "author": "0x676e67",
+  "app_features": [
+    "background_task"
+  ],
+  "subdomain": "thunder",
+  "version": "3.11.2",
+  "iconPath": "thunder.png",
+  "composePath": "docker-compose.yml",
+  "unsupported_platforms": [],
+  "lastRouteType": "from_compose",
+  "port_mappings": {
+    "xunlei_5055_5055": {
+      "use": true,
+      "type": "http",
+      "path": "/",
+      "targetPath": "/"
+    }
+  },
+  "image_ghcr.io_0x676e67_xunlei_3.11.2-32": {
+    "originalImage": "ghcr.io/0x676e67/xunlei:3.11.2-32",
+    "pushTarget": "lazycat",
+    "newImageName": "registry.lazycat.cloud/czyt/0x676e67/xunlei:2bae4337d2eb6ac2",
+    "timestamp": "2025-02-13T12:20:06.501Z"
+  },
+  "xunlei_volume_/xunlei/data_action": "emptyDir",
+  "xunlei_volume_/xunlei/data_location": "app_data",
+  "xunlei_volume_/xunlei/downloads_action": "emptyDir",
+  "xunlei_volume_/xunlei/downloads_location": "app_data"
+}
