@@ -2,13 +2,13 @@ lzc-sdk-version: "0.1"
 name: 迅雷NAS版
 package: cloud.lazycat.app.thunder
 version: 3.11.2
-description: Nas thunder
+description: Nas版迅雷
 homepage: https://github.com/0x676e67/thunder
 author: "0x676e67"
 application:
   subdomain: thunder
   background_task: true
-  multi_instance: false
+  multi_instance: true
   gpu_accel: false
   kvm_accel: false
   usb_accel: false
@@ -21,4 +21,4 @@ services:
 
     binds:
       - /lzcapp/var/data:/xunlei/data
-      - /lzcapp/run/mnt/home/XunLeiDownload:/xunlei/downloads
+      - /lzcapp/run/mnt/home/迅雷下载:/downloads
