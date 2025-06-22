@@ -9,11 +9,8 @@ application:
   subdomain: thunder
   background_task: true
   multi_instance: true
-  gpu_accel: false
-  kvm_accel: false
-  usb_accel: false
   routes:
-    - /=http://xunlei.cloud.lazycat.app.thunder.lzcapp:5055/
+    - /=http://xunlei:5055/
 services:
   xunlei:
     image: registry.lazycat.cloud/czyt/0x676e67/xunlei:2bae4337d2eb6ac2
@@ -22,3 +19,6 @@ services:
     binds:
       - /lzcapp/var/data:/xunlei/data
       - /lzcapp/run/mnt/home/迅雷下载:/downloads
+ext_config:
+  enable_document_access: true
+  enable_media_access: true
