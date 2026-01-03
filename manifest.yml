@@ -19,9 +19,11 @@ services:
       - XL_UID=1000
       - XL_GID=1000
       - XL_PREVENT_UPDATE=false
+      - XL_DIR_DOWNLOAD=/xunlei/downloads
+      - XL_CHROOT=/xunlei/
     binds:
       - /lzcapp/var/data:/xunlei/data
-      - /lzcapp/run/mnt/home/迅雷下载:/downloads
+      - /lzcapp/run/mnt/home/迅雷下载:/xunlei/downloads
 ext_config:
   enable_document_access: true
   enable_media_access: true
