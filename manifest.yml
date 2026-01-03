@@ -15,7 +15,6 @@ services:
   xunlei:
     # ghcr.io/cnk3x/xunlei:v3.20.2
     image: ghcr.1ms.run/cnk3x/xunlei:v3.20.2
-    user: root
     environment:
       - XL_UID=1000
       - XL_GID=1000
