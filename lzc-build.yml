@@ -1,5 +1,5 @@
 # manifest: 指定 lpk 包的 manifest.yml 文件路径
-manifest: ./manifest.yml
+manifest: ./lzc-manifest.yml
 
 
 # pkgout: lpk 包的输出路径

@@ -1,0 +1,15 @@
+package: cloud.lazycat.app.thunder
+version: 3.20.2
+name: 迅雷
+description: Nas版迅雷
+homepage: https://github.com/cnk3x/xunlei
+author: cnk3x
+min_os_version: 1.3.8
+
+locales:
+  zh:
+    name: 迅雷
+    description: Nas版迅雷
+  en:
+    name: Thunder
+    description: NAS version of Thunder download tool

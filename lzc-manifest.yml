@@ -1,19 +1,13 @@
-lzc-sdk-version: "0.1"
-name: 迅雷
-package: cloud.lazycat.app.thunder
-version: 3.20.2
-description: Nas版迅雷
-homepage: https://github.com/cnk3x/xunlei
-author: cnk3x
 application:
   subdomain: thunder
   background_task: true
   multi_instance: true
-  routes:
-    - /=http://xunlei:2345/
+  upstreams:
+    - location: /
+      backend: http://xunlei:2345/
+
 services:
   xunlei:
-    # ghcr.io/cnk3x/xunlei:v3.20.2
     image: ghcr.1ms.run/cnk3x/xunlei:v3.20.2
     environment:
       - XL_UID=1000
@@ -24,6 +18,7 @@ services:
     binds:
       - /lzcapp/var/data:/xunlei/data
       - /lzcapp/run/mnt/home/迅雷下载:/xunlei/downloads
+
 ext_config:
   enable_document_access: true
   enable_media_access: true
