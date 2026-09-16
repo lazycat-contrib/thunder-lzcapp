@@ -8,6 +8,7 @@ application:
 
 services:
   xunlei:
+    # upstream: ghcr.io/cnk3x/xunlei:v3.20.2
     image: ghcr.1ms.run/cnk3x/xunlei:v3.20.2
     environment:
       - XL_UID=1000
