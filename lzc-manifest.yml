@@ -5,11 +5,10 @@ application:
   upstreams:
     - location: /
       backend: http://xunlei:2345/
-
 services:
   xunlei:
-    # upstream: ghcr.io/cnk3x/xunlei:v3.20.2
-    image: ghcr.1ms.run/cnk3x/xunlei:v3.20.2
+    # upstream: cnk3x/xunlei:v3.20.2
+    image: docker.1ms.run/cnk3x/xunlei:v3.20.2
     environment:
       - XL_UID=1000
       - XL_GID=1000
@@ -19,7 +18,6 @@ services:
     binds:
       - /lzcapp/var/data:/xunlei/data
       - /lzcapp/run/mnt/home/迅雷下载:/xunlei/downloads
-
 ext_config:
   enable_document_access: true
   enable_media_access: true
