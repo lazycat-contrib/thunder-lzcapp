@@ -1,11 +1,11 @@
 package: cloud.lazycat.app.thunder
+license: MIT
 version: 3.20.2
 name: 迅雷
 description: "Nas版迅雷"
 homepage: https://github.com/cnk3x/xunlei
 author: cnk3x
 min_os_version: "1.5.0"
-
 locales:
   zh:
     name: 迅雷
