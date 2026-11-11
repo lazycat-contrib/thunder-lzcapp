@@ -1,6 +1,6 @@
 package: cloud.lazycat.app.thunder
 license: MIT
-version: 4.0.0-b1
+version: 4.0.0-beta
 name: 迅雷
 description: "Nas版迅雷"
 homepage: https://github.com/cnk3x/xunlei

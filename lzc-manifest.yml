@@ -7,8 +7,8 @@ application:
       backend: http://xunlei:2345/
 services:
   xunlei:
-    # upstream: cnk3x/xunlei:v3.20.2
-    image: docker.1ms.run/cnk3x/xunlei:v3.20.2
+    # upstream: cnk3x/xunlei:4.0.0-beta
+    image: docker.1ms.run/cnk3x/xunlei:4.0.0-beta
     environment:
       - XL_UID=1000
       - XL_GID=1000
