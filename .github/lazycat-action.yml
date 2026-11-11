@@ -20,9 +20,9 @@ images:
     target: service
     service: xunlei
     source: cnk3x/xunlei
-    channel: stable
+    channel: beta
     sort: semver
-    tag_regex: '^v?\d+\.\d+\.\d+$'
+    tag_regex: '^v?\d+\.\d+\.\d+(-beta(\.\d+)?|-b\d+)?$'
     delivery:
       mode: mirror
 stores:
